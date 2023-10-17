@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="preto">#33322E</color>
+    <color name="branco">#FFFFFFFF</color>
+    <color name="bg1">#F9F3E5</color>
+    <color name="bg2">#FFF0EE</color>
+    <color name="bg3">#D0F4F0</color>
+    <color name="verde">#8CD4CB</color>
+    <color name="amarelo">#F4D799</color>
+    <color name="rosa">#F6A89E</color>
+    <color name="roxo">#968CD4</color>
+</resources>
