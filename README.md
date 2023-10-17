@@ -17,7 +17,7 @@ de dados;
 ## Autores
 
 - [@hugo.amoraes](https://github.com/HugoaMoraes)
-- Giovani
+- Giovani Kauã Queiroz de Souza
 
 ## Versão
 
@@ -31,12 +31,12 @@ de dados;
 | Cor BG 1       | ![#F9F3E5](https://via.placeholder.com/10/F9F3E5?text=+) #F9F3E5 |
 | Cor BG 2       | ![#FFF0EE](https://via.placeholder.com/10/FFF0EE?text=+) #FFF0EE |
 | Cor BG 3       | ![#D0F4F0](https://via.placeholder.com/10/D0F4F0?text=+) #D0F4F0 |
-| Cor Preto     | ![#33322E](https://via.placeholder.com/10/33322E?text=+) #33322E |
-| Cor Branco     | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
-| Cor Verde     | ![#8CD4CB](https://via.placeholder.com/10/8CD4CB?text=+) #8CD4CB |
-| Cor Amarelo     | ![#F4D799](https://via.placeholder.com/10/F4D799?text=+) #F4D799 |
-| Cor Rosa     | ![#F6A89E](https://via.placeholder.com/10/F6A89E?text=+) #F6A89E |
-| Cor Roxo     | ![#968CD4](https://via.placeholder.com/10/968CD4?text=+) #968CD4 |
+| Preto          | ![#33322E](https://via.placeholder.com/10/33322E?text=+) #33322E |
+| Branco         | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) #FFFFFF |
+| Verde          | ![#8CD4CB](https://via.placeholder.com/10/8CD4CB?text=+) #8CD4CB |
+| Amarelo        | ![#F4D799](https://via.placeholder.com/10/F4D799?text=+) #F4D799 |
+| Rosa           | ![#F6A89E](https://via.placeholder.com/10/F6A89E?text=+) #F6A89E |
+| Roxo           | ![#968CD4](https://via.placeholder.com/10/968CD4?text=+) #968CD4 |
 
 ## Documentação Font
 
