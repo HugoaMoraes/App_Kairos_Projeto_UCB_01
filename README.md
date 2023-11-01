@@ -17,7 +17,7 @@ de dados;
 ## Autores
 
 - [@hugo.amoraes](https://github.com/HugoaMoraes)
-- Giovani Kauã Queiroz de Souza
+- [@lkgiovani](https://github.com/lkgiovani)
 
 ## Versão
 
