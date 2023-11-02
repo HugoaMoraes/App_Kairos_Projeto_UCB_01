@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg1"
+    android:background="@color/branco"
     tools:context=".MainActivity">
 
     <ImageView
@@ -110,7 +110,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/bg1"
+        android:backgroundTint="@color/branco"
         android:fontFamily="@font/poppins"
         android:text="Voltar"
         android:textColor="@color/amarelo"

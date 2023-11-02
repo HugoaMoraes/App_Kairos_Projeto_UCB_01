@@ -6,19 +6,19 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
-class HomeActivity : AppCompatActivity() {
+class PontosActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.home_activity)
+        setContentView(R.layout.pontos_activity)
 
+        var buttonHome: Button = findViewById(R.id.button2)
         var buttonCalendario: Button = findViewById(R.id.button3)
-        var buttonPontos: Button = findViewById(R.id.button4)
 
-        buttonPontos.setOnClickListener {
-            var intent: Intent = Intent(this,PontosActivity::class.java)
-            startActivity(intent)
+
+        buttonHome.setOnClickListener {
+            finish()
         }
 
 //        buttonCalendario.setOnClickListener {
