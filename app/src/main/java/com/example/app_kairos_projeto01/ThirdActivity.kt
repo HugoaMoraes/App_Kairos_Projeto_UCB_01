@@ -13,12 +13,12 @@ class ThirdActivity : AppCompatActivity() {
         setContentView(R.layout.third_activity)
 
         var buttonVoltar: Button = findViewById(R.id.button2)
-        var buttonProximo: Button = findViewById(R.id.button)
+        var buttonLogar: Button = findViewById(R.id.button)
 
-//        buttonProximo.setOnClickListener {
-//            var intent: Intent = Intent(this,ThirdActivity::class.java)
-//            startActivity(intent)
-//        }
+        buttonLogar.setOnClickListener {
+            var intent: Intent = Intent(this,HomeActivity::class.java)
+            startActivity(intent)
+        }
 
         buttonVoltar.setOnClickListener {
             finish()

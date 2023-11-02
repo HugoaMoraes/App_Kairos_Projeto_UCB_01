@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
 
     <style name="Base.Theme.App_Kairos_Projeto01" parent="Theme.Material3.DayNight.NoActionBar">
-        <item name="colorPrimary">@color/bg1</item>
+        <item name="colorPrimary">@color/preto</item>
     </style>
 
     <style name="Theme.App_Kairos_Projeto01" parent="Base.Theme.App_Kairos_Projeto01" />

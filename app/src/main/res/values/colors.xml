@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="preto">#33322E</color>
+    <color name="cinza">#615F57</color>
     <color name="branco">#FFFFFFFF</color>
     <color name="bg1">#F9F3E5</color>
     <color name="bg2">#FFF0EE</color>
