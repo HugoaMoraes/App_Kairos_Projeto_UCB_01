@@ -65,10 +65,12 @@
         android:layout_marginBottom="100dp"
         android:text="Próximo"
         android:textColor="@color/branco"
-        android:backgroundTint="@color/preto"
+        android:background="@drawable/button_principal"
+        android:textAllCaps="false"
         android:fontFamily="@font/poppins"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:drawableEnd="@drawable/prox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

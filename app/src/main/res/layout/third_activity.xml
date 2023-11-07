@@ -63,12 +63,13 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/preto"
+        android:background="@drawable/button_principal"
         android:fontFamily="@font/poppins"
         android:text="Logar"
         android:textColor="@color/branco"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -79,11 +80,12 @@
         android:layout_marginStart="50dp"
         android:layout_marginBottom="100dp"
         android:text="Voltar"
-        android:backgroundTint="@color/branco"
         android:textColor="@color/rosa"
         android:fontFamily="@font/poppins"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/button_not"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

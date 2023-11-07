@@ -29,6 +29,7 @@
         android:textColor="@color/amarelo"
         android:textSize="32sp"
         android:textStyle="bold"
+        android:background="@drawable/button_not"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -97,10 +98,13 @@
         android:layout_marginBottom="100dp"
         android:text="Próximo"
         android:textColor="@color/branco"
-        android:backgroundTint="@color/preto"
+        android:background="@drawable/button_principal"
         android:fontFamily="@font/poppins"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textAllCaps="false"
+
+        android:drawableEnd="@drawable/prox"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -110,12 +114,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/branco"
         android:fontFamily="@font/poppins"
         android:text="Voltar"
         android:textColor="@color/amarelo"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/button_not"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
