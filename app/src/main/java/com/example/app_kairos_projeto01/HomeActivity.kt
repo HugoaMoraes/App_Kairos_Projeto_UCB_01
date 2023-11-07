@@ -15,8 +15,13 @@ class HomeActivity : AppCompatActivity() {
 
         var buttonCalendario: Button = findViewById(R.id.button3)
         var buttonPontos: Button = findViewById(R.id.button4)
+        var buttonNovaTarefa: Button = findViewById(R.id.button)
 
         buttonCalendario.setOnClickListener {
+            val intent = Intent(this, CalendarioActivity::class.java)
+            startActivity(intent)
+        }
+        buttonNovaTarefa.setOnClickListener {
             val intent = Intent(this, CalendarioActivity::class.java)
             startActivity(intent)
         }
