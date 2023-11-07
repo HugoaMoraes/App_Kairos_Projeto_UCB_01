@@ -16,7 +16,8 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/weekly" />
+        app:srcCompat="@drawable/weekly"
+        />
 
     <TextView
         android:id="@+id/textView"
