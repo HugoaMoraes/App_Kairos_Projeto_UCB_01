@@ -110,13 +110,13 @@
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginBottom="100dp"
+        android:background="@drawable/button_sombra"
         android:fontFamily="@font/poppins"
         android:text="Nova Tarefa"
+        android:textAllCaps="false"
         android:textColor="@color/preto"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:background="@drawable/button_sombra"
-        android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -124,13 +124,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/RecyclerView"
-        android:layout_width="409dp"
-        android:layout_height="425dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_width="310dp"
+        android:layout_height="325dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/sombra"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
