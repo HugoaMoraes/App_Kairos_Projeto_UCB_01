@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.LinearLayout
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.app_kairos_projeto01.databinding.HomeActivityBinding
@@ -36,28 +37,36 @@ class HomeActivity : AppCompatActivity() {
         }
         initRecyclerView()
     }
-    private fun initRecyclerView(){
+    private fun initRecyclerView() {
+        val namesList = getList()
+        // Inicializar a lista de estados do CheckBox com valores 'false'
+        val checkBoxStates = MutableList(namesList.size) { false }
+
         binding.RecyclerView.layoutManager = LinearLayoutManager(this)
         binding.RecyclerView.setHasFixedSize(true)
-        binding.RecyclerView.adapter = Adpter(getList())
+        // Passar ambas as listas para o Adapter
+        binding.RecyclerView.adapter = Adpter(namesList, checkBoxStates){ tarefa ->
+            Toast.makeText(this, tarefa, Toast.LENGTH_SHORT).show()
+        }
     }
 
     private fun getList() = listOf(
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani",
-        "giovani"
+        "Comprar leite",
+        "Ir à academia",
+        "Estudar Kotlin",
+        "Marcar consulta médica",
+        "Pagar contas",
+        "Ler um livro",
+        "Assistir a uma aula online",
+        "Limpar o quarto",
+        "Preparar o almoço",
+        "Lavar o carro",
+        "Praticar meditação",
+        "Fazer compras no supermercado",
+        "Passear com o cachorro",
+        "Organizar documentos",
+        "Ligar para um amigo"
     )
+
 
 }

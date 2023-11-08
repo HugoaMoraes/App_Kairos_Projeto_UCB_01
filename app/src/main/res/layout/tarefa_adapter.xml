@@ -6,7 +6,7 @@
 
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBoxTarefa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -18,11 +18,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="14dp"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxTarefa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTarefa"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxTarefa" />
 
     <ImageView
         android:layout_width="match_parent"
@@ -33,5 +33,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTarefa" />
 </androidx.constraintlayout.widget.ConstraintLayout>
