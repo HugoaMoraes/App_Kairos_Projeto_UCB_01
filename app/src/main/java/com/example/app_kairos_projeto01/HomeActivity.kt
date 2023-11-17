@@ -4,6 +4,7 @@ package com.example.app_kairos_projeto01
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -18,16 +19,17 @@ class HomeActivity : AppCompatActivity() {
         binding = HomeActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        var buttonCalendario: Button = findViewById(R.id.button3)
         var buttonPontos: Button = findViewById(R.id.button4)
         var buttonNovaTarefa: Button = findViewById(R.id.button)
+        var buttonConfig: ImageButton = findViewById(R.id.button5)
 
-        buttonCalendario.setOnClickListener {
+        buttonNovaTarefa.setOnClickListener {
             val intent = Intent(this, CalendarioActivity::class.java)
             startActivity(intent)
         }
-        buttonNovaTarefa.setOnClickListener {
-            val intent = Intent(this, CalendarioActivity::class.java)
+
+        buttonConfig.setOnClickListener {
+            val intent = Intent(this, ConfigActivity::class.java)
             startActivity(intent)
         }
 

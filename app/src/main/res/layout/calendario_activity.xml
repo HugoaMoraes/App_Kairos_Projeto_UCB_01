@@ -31,9 +31,10 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/button_toobar_bordar"
                 android:backgroundTint="@color/amarelo"
                 android:text="Home"
@@ -42,13 +43,14 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/button3"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/button_toobar_bordar"
                 android:backgroundTint="@color/bg2"
                 android:text="Tarefas"
@@ -57,34 +59,19 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button2" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/button_toobar_bordar"
-                android:backgroundTint="@color/verde"
-                android:text="Pontos"
-                android:textAllCaps="false"
-                android:textColor="@color/branco"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button3" />
+                app:layout_constraintEnd_toStartOf="@+id/button5" />
 
             <ImageButton
                 android:id="@+id/button5"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
                 android:background="@drawable/button_toobar_bordar"
                 android:backgroundTint="@color/roxo"
                 android:paddingVertical="12dp"
                 android:src="@drawable/conf"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/button4" />
+                app:layout_constraintEnd_toEndOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -27,6 +27,7 @@
         <activity android:name=".HomeActivity"></activity>
         <activity android:name=".PontosActivity"></activity>
         <activity android:name=".CalendarioActivity"></activity>
+        <activity android:name=".ConfigActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -3,6 +3,7 @@ package com.example.app_kairos_projeto01
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
 class CalendarioActivity : AppCompatActivity() {
@@ -13,11 +14,10 @@ class CalendarioActivity : AppCompatActivity() {
         setContentView(R.layout.calendario_activity)
 
         var buttonHome: Button = findViewById(R.id.button2)
-        var buttonPontos: Button = findViewById(R.id.button4)
+        var buttonConfig: ImageButton = findViewById(R.id.button5)
 
-
-        buttonPontos.setOnClickListener {
-            var intent: Intent = Intent(this,PontosActivity::class.java)
+        buttonConfig.setOnClickListener {
+            val intent = Intent(this, ConfigActivity::class.java)
             startActivity(intent)
         }
 
