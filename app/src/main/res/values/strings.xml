@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">App_Kairos_Projeto01</string>
+    <string name="preference_file_key"> com.example.app_kairos_projeto01.preference_file_key</string>
 </resources>

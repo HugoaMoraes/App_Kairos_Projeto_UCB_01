@@ -132,7 +132,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/pegaNomeTarefa" />
 
     <Button
         android:id="@+id/button"
@@ -152,7 +152,7 @@
 
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/pegaNomeTarefa"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="21dp"
@@ -167,6 +167,7 @@
 
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"

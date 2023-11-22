@@ -5,7 +5,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
-import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -25,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
 
         buttonNovaTarefa.setOnClickListener {
             val intent = Intent(this, CalendarioActivity::class.java)
-            startActivity(intent)
+            startActivityForResult(intent, REQUEST_CODE_ADD_TASK) // Defina REQUEST_CODE_ADD_TASK como um valor constante
         }
 
         buttonConfig.setOnClickListener {
@@ -39,36 +38,52 @@ class HomeActivity : AppCompatActivity() {
         }
         initRecyclerView()
     }
+
+    companion object {
+        private const val REQUEST_CODE_ADD_TASK = 1
+    }
+    fun atualizarRecyclerView() {
+        val tarefaManager = TarefaManager(this)
+        val tarefasAtualizadas = tarefaManager.lerTarefasDoSharedPreferences()
+        (binding.RecyclerView.adapter as? Adapter)?.atualizarLista(tarefasAtualizadas)
+    }
+
+    override fun onResume() {
+        super.onResume()
+        initRecyclerView()
+    }
+
     private fun initRecyclerView() {
-        val namesList = getList()
-        // Inicializar a lista de estados do CheckBox com valores 'false'
-        val checkBoxStates = MutableList(namesList.size) { false }
+        val tarefaManager = TarefaManager(this)
+        val tarefasList = tarefaManager.lerTarefasDoSharedPreferences()
+        val adapter = Adapter(tarefasList) { tarefa ->
+            Toast.makeText(this, tarefa.nomeDaTarefa, Toast.LENGTH_SHORT).show()
+            tarefaManager.salvarTarefa(tarefa) {
+                atualizarRecyclerView()
+            }
+        }
 
         binding.RecyclerView.layoutManager = LinearLayoutManager(this)
         binding.RecyclerView.setHasFixedSize(true)
-        // Passar ambas as listas para o Adapter
-        binding.RecyclerView.adapter = Adpter(namesList, checkBoxStates){ tarefa ->
-            Toast.makeText(this, tarefa, Toast.LENGTH_SHORT).show()
-        }
+        binding.RecyclerView.adapter = adapter
     }
 
-    private fun getList() = listOf(
-        "Comprar leite",
-        "Ir à academia",
-        "Estudar Kotlin",
-        "Marcar consulta médica",
-        "Pagar contas",
-        "Ler um livro",
-        "Assistir a uma aula online",
-        "Limpar o quarto",
-        "Preparar o almoço",
-        "Lavar o carro",
-        "Praticar meditação",
-        "Fazer compras no supermercado",
-        "Passear com o cachorro",
-        "Organizar documentos",
-        "Ligar para um amigo"
-    )
+    private fun gerarDadosFalsos(): List<Tarefa> {
+        val tarefasFalsas = mutableListOf<Tarefa>()
+        for (i in 1..10) {
+            tarefasFalsas.add(Tarefa("Tarefa $i", i * 10, false))
+        }
+        return tarefasFalsas
+    }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (requestCode == REQUEST_CODE_ADD_TASK) {
+            if (resultCode == RESULT_OK) {
+                atualizarRecyclerView()
+            }
+        }
+    }
 
 }
