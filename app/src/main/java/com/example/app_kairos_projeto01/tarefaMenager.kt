@@ -45,7 +45,6 @@ class TarefaManager(private val context: Context) {
         editor.putString("tarefas", gson.toJson(tarefas))
         editor.apply()
 
-        afterSave()
     }
 
 }

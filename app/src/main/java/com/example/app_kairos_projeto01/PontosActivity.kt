@@ -18,7 +18,7 @@ class PontosActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = PontosActivityBinding.inflate(layoutInflater)
-        setContentView(R.layout.pontos_activity)
+        setContentView(binding.root)
 
         var buttonHome: Button = findViewById(R.id.button2)
         var buttonConfig: ImageButton = findViewById(R.id.button5)
@@ -40,11 +40,11 @@ class PontosActivity : AppCompatActivity() {
         val tarefaManager = TarefaManager(this)
         val tarefasList = tarefaManager.lerTarefasDoSharedPreferences()
 
-        // Filtrar as tarefas em que isCompleted é igual a true
+        // Filtrar as tarefas completas
         val tarefasCompletas = tarefasList.filter { it.isCompleted }
 
         // Calcular a soma dos pontos das tarefas completas
-        val pontosTotais = tarefasCompletas.sumBy { it.pontos }
+        val pontosTotais = tarefasCompletas.sumOf { it.pontos }
 
         // Mostrar o resultado na view
         binding.pontos.text = pontosTotais.toString()
